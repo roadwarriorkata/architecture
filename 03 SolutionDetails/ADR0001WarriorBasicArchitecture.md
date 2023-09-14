@@ -11,7 +11,7 @@ The target is to build an online trip management application to allow travelers 
 
 ![Context View of RoadWarrior](ContextView.png)
 
-User Access to the RoadWarrior will be via Web Browser, iOS or Anroid app.
+User Access to the Road Warrior will be via Web Browser, iOS or Anroid app.
 
 [Describe the context and problem statement, e.g., in free form using two to three sentences. You may want to articulate the problem in form of a question. Provide background on user journey or challenge that needs to be implemented?]
 

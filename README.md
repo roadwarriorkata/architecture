@@ -33,5 +33,5 @@ The documentation is organized in three folders providing detailed information a
 ---
 
 
-O'Reilly Architecture Kata 2023 RoadWarrior by oli, Jan and Philip
+O'Reilly Architecture Kata 2023 RoadWarrior by Oli, Jan and Philip
 
