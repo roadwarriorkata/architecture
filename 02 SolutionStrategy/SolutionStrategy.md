@@ -13,10 +13,10 @@ On the data part we propose to build single data backends per service. If the de
 
 - Build in the cloud, build cloud native solutions where deployment, monitoring and operations can be automated with APIs.
 - Design for simplicity, we strive for simple architectures, which are easier to communicate, build, deploy, operate, and evolve.
-- Design for modular landscape, we balance loose coulpling and coherence.
-- Design for external integration, we allow to connect to a growing eco system.
-- Design for the entire lifecycle, we design for maintainability of technologues, applications and data.
-- Design for Security and Compliance, we ensure legal constraints and ensure external regulations by design.
+- Design for modular landscape, we balance loose coupling and coherence.
+- Design for external integration, we allow to connect to a growing ecosystem.
+- Design for the entire lifecycle, we design for maintainability of technologies, applications and data.
+- Design for security and compliance, we ensure legal constraints and ensure external regulations by design.
 
 ## Informal Overview Diagram
 
