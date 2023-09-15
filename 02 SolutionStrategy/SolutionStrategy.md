@@ -1,20 +1,24 @@
 # Solution Strategy
-
+This Document provides a high level overview of the to be architecture for the Warrior application. It is intended to serve as fundation to ensure joint understanding how the defined problem of the traveler domain will translate into a solution, which takes architecture constraints and architectire principles into accont.
 
 ## Solution Strategy
 (containing architecture goals and their supportive architecture approaches)
+- leading ideas/concepts
+  - service architecture
+  - decoupeling via message - address architecture characteristics per service
+  - one databayse per service
 
 ## Architecture Principles
 
-### 1.2.1 Architecture Principles
+- Build in the cloud, build cloud native solutions
+- Design for modular landscape, we balance loose coulpling and coherence
+- Design for external integration, we allow to connect to a growing eco system
+- Design for the entire lifecycle, we design for maintainability of technologues, applications and data
+- Design for Security and Compliance, we ensure legal constraints and ensure external regulations by design.
 
-Bayer principles on Enterprise Architecture: [EA Principles](https://bayergroup.sharepoint.com/sites/ArchitectureHub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FArchitectureHub%2FShared%20Documents%2FArchitecture%20Artifacts%2FEA%5FPrinciples%5FOne%5FPager%2Epdf&parent=%2Fsites%2FArchitectureHub%2FShared%20Documents%2FArchitecture%20Artifacts)
-
-Bayer principles for Cloud Native and SaaS usage: [Cloud Principles](https://bayergroup.sharepoint.com/sites/ArchitectureHub/_layouts/15/Doc.aspx?sourcedoc=%7B0D008775-857C-41C3-87ED-AA7AF2E32097%7D&file=2021-12-09%20-%20Cloud%20Principles.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1)
-
-[ Provide relevant Architecture Principles which require consideration for problem statement. Choose from above linked Bayer principles and provide 2-3 lines per relevant/focus principle]
 ## Informal Overview Diagram
+
+The following diagram provides insights into the overall contexts and respective services and components for the Warrior application. It provides a scetch of the communication and interaction patterns required for cross context communication and external communication with agencies.
 
 ![High Level De-Composition](HighLevelComponentView.png)
 
-## Preliminary Component View
