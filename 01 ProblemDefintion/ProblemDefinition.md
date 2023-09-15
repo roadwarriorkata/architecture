@@ -6,7 +6,7 @@ The target is to build an online trip management application to allow travelers 
 
 ## User Journeys
 
-The main interaction of the traveler (user) for the MVP is scetched with the following user journeys: 
+The main interaction of the traveler (user) for the MVP is scetched with the following user journeys. 
 
 ### Planning Journey
 
@@ -28,6 +28,10 @@ In case the traveler runs into conflicting information or problems when travelin
 
 ![Help Journey](HelpJourney.png)
 
+### Analytics / Reporting Journey
+
+The traveler wants to have a reporting overview for his past travels. He wants to see past locations or used reservations/agencies. The same data will be used for Warrior general reporting.
+
 ## System Context
 
 The traveler interacts with the Travel Warrior application (either via smart phone or web browser). The rich interface provides access to all relevant agencies for car, hotel oder flight reservations. 
@@ -43,6 +47,7 @@ The Warrior application is split into user interface components, business logic 
 
 Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
+The following list of quality requirements is based on ISO25010. It is reduced to the more relevant characteristics and enhanced where needed. Subsets of this list are used within the ADRs to provide constraints and priorities for architecture decisions.
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
@@ -65,6 +70,6 @@ Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-stan
 
 ## Essential Constraints
 
-The company is a start up with limited experience and capacity in developing and deploying modern architecture. We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP.
+The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP.
 
 ## Greatest Risks

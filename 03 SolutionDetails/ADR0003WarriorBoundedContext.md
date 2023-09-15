@@ -25,7 +25,7 @@ It needs to be clarified, how the overall architecture pattern looks like. What 
 - API First: Drive for decoupling components and enable reuse of APIs
 
 ### 1.2.2 Quality Requirements
-Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
+Quality Requirements: [ISO25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
 For detailled information on relevance for Warrior application please consult: [ProblemDefinition.md](/01%20ProblemDefintion/ProblemDefinition.md)
 
