@@ -3,11 +3,11 @@ This Document provides a high level overview of the to be architecture for the R
 
 ## Solution Strategy
 
-(containing architecture goals and their supportive architecture approaches)
-- leading ideas/concepts
-  - service architecture
-  - decoupeling via message - address architecture characteristics per service
-  - one databayse per service
+We are proposing to build the solution with a Service-based architecture with four services. The services follow the user journey analysis described in the [problem definition](/01%20ProblemDefintion/ProblemDefinition.md#user-journeys). We propose to separate these user journeys as they emphasize different architecture characteristics. While a fast response and up-to-date reservation data is particularly important during the travel in case of changing plans or travel schedules, we could lift these requirements a bit during the planning phase of a journey.
+
+We propose to couple the domains loosely by triggering messages between the domains that follow the user journeys. The travel planning domain, for instance, hands over trip and reservation data once a trip starts or gets activated by a user and the _Enjoy your trip!_ domain sends data to the _Time machine_ through the trip archiver service. Using message queues between the domain we can buffer data in case of domain service failure and allow recovery without loosing data.
+
+On the data part we propose to build single data backends per service. If the development team has the skillset to orchestrate services automatically, the _Enjoy your trip!_ domain will benefit from building into a microservice architecture just for that domain as it has the highest requirements in terms of availability and scalability in case of unforeseen traveling events like flight cancellations due to heavy storms. The same holds true for the _Help me!_ domain which requires elasticity in case of larger user request floods due to afore mentioned events.
 
 ## Architecture Principles
 
