@@ -22,7 +22,7 @@ The target of the planning journey is to plan and prepare an upcomming trip (tra
 
 ### Travel Journey
 
-The traget of the travel journey is to support the traveler while on the journey and provide him with always up to date information on the current and upcomming reservations. He also should be able to trigger or digest changes in schedule, accomodation or connection details.
+The target of the travel journey is to support the traveler while on the journey and provide him with always up to date information on the current and upcomming reservations. He also should be able to trigger or digest changes in schedule, accomodation or connection details.
 
 The user wants to share his trip with friends and family via social media channels.
 
@@ -40,14 +40,14 @@ The traveler wants to have a reporting overview for past travels. He wants to se
 
 ## System Context
 
-The traveler interacts with the Travel Warrior application (either via mobile app or web browser). The rich interface provides access to all relevant agencies for car, hotel oder flight reservations. 
-Also the traveler can access reservation details from platforms like Sabre or Apollo.
+The traveler interacts with the Road Warrior application (either via mobile app or web browser). The rich interface provides access to all relevant agencies for car, hotel oder flight reservations. 
+The traveler can also access reservation details from platforms like Sabre or Apollo.
 The Warrior application provides interfaces to social media channels like Instagram, Whatsapp and Facebook.
-For convenience reasons the traveler can allow the Warrior application to scan his mail folder (IMAP) in order to filter for travel relevant information and provide an additional input channel for travel updates as some agencies prefer this channel.
+For convenience reasons the traveler can allow the Road Warrior application to scan his email folder (IMAP) in order to filter for travel relevant information and provide an additional input channel for travel updates as some agencies prefer this channel.
 
 ![System Context View](SystemContextView.png)
 
-The Warrior application is split into user interface components, business logic and persistency components along travel related contexts. For details please see [SolutionStartegy.md](/02%20SolutionStrategy/SolutionStrategy.md).
+The Road Warrior application is split into user interface components, business logic and persistency components along travel related contexts. For details please see [SolutionStartegy.md](/02%20SolutionStrategy/SolutionStrategy.md).
 
 ## Architecture Goals
 
@@ -57,11 +57,11 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
-| Time Behaviour, Responsiveness | high | Response time web: 800ms app: 1400ms|
-| Capacity, Scalability | high | 2 mio active users per week |
-| Elasticity | high | Parts of the Road Warrior application has to adapt to current needs e.g. start of local vacation times like christmas or thanks giving. Also in case of issues in e.g. air traffic will lead to much more travel updates. |
+| Time Behaviour, Responsiveness | high | Max Response time web: 800ms app: 1400ms|
+| Capacity, Scalability | high | 2 mio active users per week, 15 mio users overall |
+| Elasticity | high | Parts of the Road Warrior application has to adapt to current needs e.g. start of local vacation times like Christmas or Thanksgiving. Also in case of issues in e.g. air traffic will lead to many more travel updates. |
 | Learnability | high | Travelers will not use this on a daily base, hence the application needs to be very easy to understand |
-| Accessability | high | All travlers across the world are targeted with this application, therefore different time zones, languages and currencies need to be taken into account. MVP: North America and Europe with English, French, German, Italien, Spanish language. All timezones, Two currencies US dollar and Euro |
+| Accessability | high | All travelers across the world are targeted with this application, therefore different time zones, languages and currencies need to be taken into account. MVP: North America and Europe with English, French, German, Italien, Spanish language. All timezones, two currencies: US dollar and Euro |
 | Availability | high | max 5 min downtime per month|
 | Data Consistency | medium | no extra needs or complex data model |
 | Data Currentness | high | during travel the traveler expects absolute consistency of reservation data against the source system. |
@@ -76,11 +76,11 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 ## Essential Constraints
 
-The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. 
-Being a start up with limited funding, the target is to have an MVP available with short time to market.
+The company is a startup with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. 
+Being a startup with limited funding, the target is to have an MVP available with short time to market.
 We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP. An early market penetration and attract further funds, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
 
 ## Largest Risks
 
-* Availability, data currentness, correctness: Users are not able to use the Road Warrior App during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason)
+* Availability, data currentness, correctness: Users are not able to use the Road Warrior app during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason)
 * Security: Especially ensure data privacy concerns for all the processed and stored data. This topic is addressed in an additional [CrossCuttingConcern for security](/03%20SolutionDetails/CrossCuttingConcern_Security.md).
