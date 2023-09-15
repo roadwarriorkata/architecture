@@ -66,17 +66,19 @@ Chosen option: "Option 2 along domains with cross domain", because this cluster 
 
 Follow the data flow through the app and divide in logical modules focusing on the the technical solution behind. In Frontend team front end technologies are needed, in Inbound and outbound mor integration technologies are needed and in core the business logic and calculation engine is created.
 ![modules_along_dataflow](modules_along_dataflow.png)
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because of dependency of the development on Vue competence. Frameworks are not stable over time and require continuous effort for adaption and changes. 
+* Easy to understand
+* Less duplication in functionalities
+* Bad, because of not able to reflect the different architecture characteristics for different user journeys in the application. Everything is highly coupled from a domain perspective, for a change probably all modules have to be toughed.
 * … <!-- numbers of pros and cons can vary -->
 
 ### 1.4.2 Create modules along domains with some cross domain modules for reusability
 
 Split focused on the user interaction with the system, the big user journeys and business domains: Travel planning, traveling itself and the help function. As some of the components are required in several modules, we decided to additinally seperate the user interface, the data capture and the data collection.
 ![modules_domain](modules_domain.png)
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because of dependency of the development on Flask competence. Frameworks are not stable over time and require continuous effort for adaption and changes. 
-* Bad, because Flask will have all business logic in one python package with relatively high internal dependency and no options for selective elasticity of different components/packages.
+* Follows the logical organisation of the business domain
+* Possible to reflect different archtitecture characteristics
+* As it is domain driven, changes can be isolated in one or two of the modules.
+* Reusability is enabled with some cross domain moodules for data capture and user interface
+* Bad, because of different technologies have to be included in one mudule, so also the reuired skills are not isolated. 
+* Bad, because from technical perspective more capababilities have to be provided in each of the module teams.
 * … <!-- numbers of pros and cons can vary -->
