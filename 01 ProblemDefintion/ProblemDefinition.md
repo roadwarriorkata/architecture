@@ -65,6 +65,6 @@ Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-stan
 
 ## Essential Constraints
 
-The company is a start up with limited experience and capacity in developing and deploying modern architecture. 
+The company is a start up with limited experience and capacity in developing and deploying modern architecture. We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP.
 
 ## Greatest Risks
