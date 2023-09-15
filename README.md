@@ -6,7 +6,7 @@ This repo consists of the architecture documentation the team prepared based on 
 
 ## Where to find what
 
-The documentation is organized in three folders providing detailed information as follows:
+The documentation is organized into three folders providing detailed information as follows:
 
 ### Problem Definition
 
