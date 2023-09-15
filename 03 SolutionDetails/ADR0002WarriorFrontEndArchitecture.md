@@ -11,7 +11,7 @@ The target is to build an online trip management application to allow travelers 
 
 ![Context View of RoadWarrior](/01%20ProblemDefintion/SystemContextView.png)
 
-User Access to the RoadWarrior will be via Web Browser, iOS or Anroid app.
+User Access to the RoadWarrior will be via Web Browser, iOS or Android app.
 The challenges are driven by a divers user base with little to no training and high expecations on usability. The road warrior application wants to have a very low entry barrier for usage to be outstanding against competitors.
 
 ## 1.2 Decision Drivers
@@ -43,7 +43,8 @@ For the overall architecture pattern decision the following quality requirements
 * Option 1: One Single Page Application with JavaScript (Vue)
 * Option 2: Python Flask application
 
-Chosen option: "Option 2 Distirbuted Components", because this architcture style allows to meet different needs regarding elasticity as well as fast development and isolated deployment. It requires highly advanced skill set in development team though.
+Chosen option: "Option 1: SPA Vue", because this architcture style allows to meet different needs regarding elasticity as well as fast development and isolated deployment. The elastic requirements of the backend or abstracted to the Vue front end via API.
+This approach requires highly advanced skill set regarding Vue in the development team though.
 
 ## 1.4 Pros and Cons of the Options <!-- optional -->
 

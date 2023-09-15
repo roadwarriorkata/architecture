@@ -76,11 +76,11 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 ## Essential Constraints
 
-The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP.
-Being a start up with limited funding, the target is to have an MVP available with short time to market. This essential to start 
-market penetration and attract further funds, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
+The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. 
+Being a start up with limited funding, the target is to have an MVP available with short time to market.
+We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP. An early market penetration and attract further funds, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
 
 ## Greatest Risks
 
 * Availability, data currentness, correctness: Users are not able to use the Road Warrior App during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason)
-* Security: Especially ensure data privacy concerns for all the processed and stored data.  
+* Security: Especially ensure data privacy concerns for all the processed and stored data. This topic is addressed in an additional [CrossCuttingConcern for security](/03%20SolutionDetails/CrossCuttingConcern_Security.md).
