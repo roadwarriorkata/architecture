@@ -10,10 +10,11 @@ This Document provides a high level overview of the to be architecture for the W
 
 ## Architecture Principles
 
-- Build in the cloud, build cloud native solutions where deployment, monitoring and operations can be automated with APIs
-- Design for modular landscape, we balance loose coulpling and coherence
-- Design for external integration, we allow to connect to a growing eco system
-- Design for the entire lifecycle, we design for maintainability of technologues, applications and data
+- Build in the cloud, build cloud native solutions where deployment, monitoring and operations can be automated with APIs.
+- Design for simplicity, we strive for simple architectures, which are easier to communicate, build, deploy, operate, and evolve.
+- Design for modular landscape, we balance loose coulpling and coherence.
+- Design for external integration, we allow to connect to a growing eco system.
+- Design for the entire lifecycle, we design for maintainability of technologues, applications and data.
 - Design for Security and Compliance, we ensure legal constraints and ensure external regulations by design.
 
 ## Informal Overview Diagram
