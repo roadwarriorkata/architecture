@@ -62,27 +62,30 @@ Of course we have to balance the different decision drivers but in the end we de
 
 ### 1.4.1 Modular Monolith
 
-[Short description of scetchd solution]
+Not distributed, single deployment but possibilities to cluster domains. One data store behind and one unser front end on top.
+* Good, because very simple architecure and can be learned very easy
+* Good, because of less costs
+* Bad, because of bad elasticty and scalability
+* Bad, because of big deployments and all the disadvantages as e.g. high time-to-market 
 
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
 
 ### 1.4.2 Microservices
 
-[Short description of scetchd solution]
+Highly distributed independent single purpose services with own data (store).
 
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
+* Good, because very focused small deloyments lead to less dependencies and less impact of changes. This results in fast releases and very low time-to-market.
+* Good, because independent deployments in cloud infrastructures.
+* Bad, because duplication of data as each service own its data
+* Bad, because hard to split all domains in a single purpose independent parts.
+* Bad, because very cost intensiv.
+* Bad, because of high number of services not simple to understand and organize.
 
 ### 1.4.3 Service-Based
 
-[Short description of scetchd solution]
+Few distributed independent domain deloyments. Not as fine grained as microservices but much smaller deployments as in the monolithic area. There is the possibility to have domain based data store. This approach can be seen as a trade-off between the simpicity of monolithic and the flexibility of microservices. It is open to be enhabced that some of the serrvices can be further spillted to microservices.
 
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
+* Good, because agility and time-to-market of seperate smaller deployments
+* Good, because more simple and less costs than microservices
+* Good, because (if domains right sized) possibility to bundle communication to other domains.
+* Bad, because no fine grained control about scaleability and elasticity
+
