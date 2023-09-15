@@ -1,10 +1,10 @@
 # Problem Defintion
 
-This file provides an oweerview of the understanding of the described problem domain including some assumptions. The dcument provides a mission statement to define the strategic target, the identified user journeys which refect the first iteration, further improvements are expected during walk through with domain experts and market research experts.
-The System context provides an understanding of what lies within the solution and which parts are external but require integration.
-The Architecture goals provide a comprehensive overview of the quality requirements for the Warrior application. 
-Essential Constraints provides information on overall domain constraints relevant for the Warrior application.
-The Greates risks section provides overall risks which might impact the timely and/or successfull go live of the Warrior application.
+This file provides an overview of the understanding of the described problem domain including some assumptions. The document provides a [mission statement](#mission-statement) to define the strategic target, the identified [user journeys](#user-journeys) which reflect the first iteration, further improvements are expected during walk through with domain experts and market research experts.
+The [system context](#system-context) provides an understanding of what lies within the solution and which parts are external but require integration.
+The [architecture goals](#architecture-goals) provide a comprehensive overview of the quality requirements for the Road Warrior application. 
+[Essential constraints](#essential-constraints) provides information on overall domain constraints relevant for the Road Warrior application.
+The [Largest risks](#largest-risks) section provides overall risks which might impact the timely and/or successfull go live of the Warrior application.
 
 ## Mission Statement
 
@@ -16,31 +16,31 @@ The main interaction of the traveler (user) for the MVP is scetched with the fol
 
 ### Planning Journey
 
-The target of the planning journey is to plan and prepare an upcomming trip (travel)
+The target of the planning journey is to plan and prepare an upcomming trip (travel).
 
 ![Panning Journey](PlanningJourney.png)
 
 ### Travel Journey
 
-The traget of the travel journey is to support the traveler while on the journey and provide himn with always up to date information on his current and upcomming reservations. He also should be able to trigger or digest changes in schedule, accomodation or connection details.
+The traget of the travel journey is to support the traveler while on the journey and provide him with always up to date information on the current and upcomming reservations. He also should be able to trigger or digest changes in schedule, accomodation or connection details.
 
-The user wants to share his travel with friends and family via social media channels.
+The user wants to share his trip with friends and family via social media channels.
 
 ![Travel Journey](TravelJourney.png)
 
 ### Help Journey
 
-In case the traveler runs into conflicting information or problems when traveling, each of the agencies provides contact details, which are provided to him for easy access and fast issue resolution.
+In case the traveler runs into conflicting information or problems when traveling, each of the agencies provides contact details, which are displyed by the app for easy access and fast issue resolution.
 
 ![Help Journey](HelpJourney.png)
 
 ### Analytics / Reporting Journey
 
-The traveler wants to have a reporting overview for his past travels. He wants to see past locations or used reservations/agencies. The same data will be used for Warrior general reporting.
+The traveler wants to have a reporting overview for past travels. He wants to see past locations or used reservations/agencies. The same data will be used for Road Warrior general reporting.
 
 ## System Context
 
-The traveler interacts with the Travel Warrior application (either via smart phone or web browser). The rich interface provides access to all relevant agencies for car, hotel oder flight reservations. 
+The traveler interacts with the Travel Warrior application (either via mobile app or web browser). The rich interface provides access to all relevant agencies for car, hotel oder flight reservations. 
 Also the traveler can access reservation details from platforms like Sabre or Apollo.
 The Warrior application provides interfaces to social media channels like Instagram, Whatsapp and Facebook.
 For convenience reasons the traveler can allow the Warrior application to scan his mail folder (IMAP) in order to filter for travel relevant information and provide an additional input channel for travel updates as some agencies prefer this channel.
@@ -80,7 +80,7 @@ The company is a start up with limited experience and capacity in developing and
 Being a start up with limited funding, the target is to have an MVP available with short time to market.
 We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP. An early market penetration and attract further funds, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
 
-## Greatest Risks
+## Largest Risks
 
 * Availability, data currentness, correctness: Users are not able to use the Road Warrior App during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason)
 * Security: Especially ensure data privacy concerns for all the processed and stored data. This topic is addressed in an additional [CrossCuttingConcern for security](/03%20SolutionDetails/CrossCuttingConcern_Security.md).
