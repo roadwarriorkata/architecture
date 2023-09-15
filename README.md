@@ -21,6 +21,7 @@ The documentation is organized in three folders providing detailed information a
 - Solution Strategy (containing architecture goals and their supportive architecture approaches)
 - Architecture Principles
 - Informal Overview Diagram
+- Trade Offs (conflicting architecture characteristics or known constraints)
 
 ### Solution Details
 
