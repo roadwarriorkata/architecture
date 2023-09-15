@@ -26,10 +26,10 @@ The following diagram provides insights into the overall contexts and respective
 
 ## Trade Offs 
 
-### simplicity of approach vs. full elasticity
+### Simplicity of approach vs. full elasticity
 
 Considering limited capacity and capability in designing and deploying fully distributed microservice architectures to serve elasticity, it is decided to start with a service based approach, which segregates business domains along expected differences in quality requirements. This allows a fast time to market with the existing group and allows for easy optimization later on the roadmap.
 
-### short time to market vs. global reach and latency requirements
+### Short time to market vs. global reach and latency requirements
 
 We assume the market go live is in north america. Here the latency requirements can be met with proposed architecture. Later for internal rollouts to Europe or Asia it is planned to have a content delivery framework integrated as a partner solution to allow full scalling and still provide expected latency requirements even in remote regions.
