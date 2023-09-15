@@ -51,15 +51,14 @@ For the overall architecture pattern decision the following quality requirements
 
 * Option 1: Modular Monolith
 * Option 2: Microservices
-* option 3: Service-Based
+* **Option 3: Service-Based**
 
 Of course we have to balance the different decision drivers but in the end we decided for option 3 with the opportunity to further split some services in direction of microservices if it is required after the MVP.
 
-Chosen option: "Option 3: Service-Based", because this architcture style is coarse-grained and based on this is more simple, less costs,  but allows to be flexible to further split the services. Especially for elasticity reasons it could make sense to get to a more fine grained service. In general it allows fast development and isolated deployment. It requires highly advanced skill set in development team though.
+**Chosen option: "Option 3: Service-Based"**, because this architcture style is coarse-grained and based on this is more simple and less costs,  but allows to be flexible to further split the services. Especially for elasticity reasons it could make sense to get to a more fine grained service split. In general it allows fast development and isolated deployment. It requires highly advanced skill set in development team though.
 
 ## 1.4 Pros and Cons of the Options <!-- optional -->
 
-[Highlight business benefits, technical impact and possible new technical debts]
 
 ### 1.4.1 Modular Monolith
 
