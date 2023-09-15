@@ -8,3 +8,4 @@
 | MVP | defines a minimum viable product for the Road Warrior. Here it limits the defined scope to a sub set to allow a quick time to market. |
 | API | Application programming interface. Here a HTTP based RESTfull API is meant |
 | Warrior | used as synonym for Travel Warrior application |
+| OWASP | [OWASP About](https://owasp.org/about/) |
