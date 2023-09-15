@@ -70,7 +70,6 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 ## Essential Constraints
 
-The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures.
-
+The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP.
 
 ## Greatest Risks
