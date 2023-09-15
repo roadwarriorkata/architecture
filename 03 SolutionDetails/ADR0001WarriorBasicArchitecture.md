@@ -11,8 +11,7 @@ The target is to build an online trip management application to allow travelers 
 
 ![Context View of RoadWarrior](ContextView.png)
 
-User Access to the Road Warrior will be via Web Browser, iOS or Anroid app.
-
+User Access to the Road Warrior will be via Web Browser, iOS or Android app.
 
 ## 1.2 Decision Drivers
 
@@ -23,13 +22,13 @@ It needs to be clarified, how the overall architecture pattern looks like. What 
 - Build in the cloud, build cloud native solutions where deployment, monitoring and operations can be automated with APIs.
 - Design for simplicity, we strive for simple architectures, which are easier to communicate, build, deploy, operate, and evolve.
 - Design for modular landscape, we balance loose coulpling and coherence.
-- Design for external integration, we allow to connect to a growing eco system.
+- Design for external integration, we allow to connect to a growing ecosystem.
 
 
 ### 1.2.2 Quality Requirements
 Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
-For detailled information on relevance for Warrior application please consult: [ProblemDefinition.md](/01%20ProblemDefintion/ProblemDefinition.md)
+For detailled information on relevance for the Road Warrior application please consult: [ProblemDefinition.md](/01%20ProblemDefintion/ProblemDefinition.md)
 
 For the overall architecture pattern decision the following quality requirements are considered most relevant:
 
@@ -43,8 +42,6 @@ For the overall architecture pattern decision the following quality requirements
 | Testability | high | Testability is critical as the Road Warrior application needs to be adapted and enhanced easily and frequently. This requires safeguarding with automated testing, hence system design needs to support testablity.|
 | Adaptability | high | High requirements to allow for application adaptation according to emerging business needs and changes in market expectations.|
 
-
-
 ## 1.3 Considered Options and Decision Outcome
 
 ![architecture_styles](architecture_styles.png)
@@ -53,21 +50,19 @@ For the overall architecture pattern decision the following quality requirements
 * Option 2: Microservices
 * **Option 3: Service-Based**
 
-Of course we have to balance the different decision drivers but in the end we decided for option 3 with the opportunity to further split some services in direction of microservices if it is required after the MVP.
+Of course we have to balance the different decision drivers but in the end we decided for option 3 with the opportunity to further split some services into microservices if it is required after the MVP.
 
-**Chosen option: "Option 3: Service-Based"**, because this architcture style is coarse-grained and based on this is more simple and less costs,  but allows to be flexible to further split the services. Especially for elasticity reasons it could make sense to get to a more fine grained service split. In general it allows fast development and isolated deployment. It requires highly advanced skill set in development team though.
+**Chosen option: "Option 3: Service-Based"**, because this architecture style is coarse-grained and based on this is more simple and lower costs, but allows to be flexible to further split the services. Especially for elasticity reasons it could make sense to get to a more fine grained service split. In general it allows fast development and isolated deployment. It requires highly advanced skill set in development team though.
 
 ## 1.4 Pros and Cons of the Options <!-- optional -->
 
-
 ### 1.4.1 Modular Monolith
 
-Not distributed, single deployment but possibilities to cluster domains. One data store behind and one unser front end on top.
-* Good, because very simple architecure and can be learned very easy
-* Good, because of less costs
-* Bad, because of bad elasticty and scalability
-* Bad, because of big deployments and all the disadvantages as e.g. high time-to-market 
-
+Not distributed, single deployment but possibilities to cluster domains. One single data store for all processes and one user front end on top.
+* Good, because very simple architecure and can be learned very easily
+* Good, because of lower costs
+* Bad, because of little elasticty due to slow deployments and only vertical scalability
+* Bad, because of large deployment and all the disadvantages as e.g. long time-to-market 
 
 ### 1.4.2 Microservices
 
@@ -75,14 +70,15 @@ Highly distributed independent single purpose services with own data (store).
 
 * Good, because very focused small deloyments lead to less dependencies and less impact of changes. This results in fast releases and very low time-to-market.
 * Good, because independent deployments in cloud infrastructures.
+* Good, because the solution is horizontally scalable and highly elastic in all components
 * Bad, because duplication of data as each service own its data
-* Bad, because hard to split all domains in a single purpose independent parts.
-* Bad, because very cost intensiv.
-* Bad, because of high number of services not simple to understand and organize.
+* Bad, because hard to split all domains into single purpose independent parts.
+* Bad, because very cost intensive.
+* Bad, because of large number of services it is not simple to build, operate, and maintain.
 
 ### 1.4.3 Service-Based
 
-Few distributed independent domain deloyments. Not as fine grained as microservices but much smaller deployments as in the monolithic area. There is the possibility to have domain based data store. This approach can be seen as a trade-off between the simpicity of monolithic and the flexibility of microservices. It is open to be enhabced that some of the serrvices can be further spillted to microservices.
+Few distributed independent domain deployments. Not as fine grained as microservices but much smaller deployments as in the monolithic area. There is the possibility to have domain based data store. This approach can be seen as a trade-off between the simpicity of monolithic and the flexibility of microservices. It is possible to be developed into microservice architectures independently per domain if we split the data early on.
 
 * Good, because agility and time-to-market of seperate smaller deployments
 * Good, because more simple and less costs than microservices
