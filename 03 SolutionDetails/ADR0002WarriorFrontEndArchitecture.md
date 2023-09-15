@@ -9,12 +9,10 @@
 
 The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations.
 
-![Context View of RoadWarrior](ContextView.png)
+![Context View of RoadWarrior](/01%20ProblemDefintion/SystemContextView.png)
 
-User Access to the RoadWarrior will be via Web Browser, iOS or Anroid app.
+User Access to the RoadWarrior will be via Web Browser, iOS or Android app.
 The challenges are driven by a divers user base with little to no training and high expecations on usability. The road warrior application wants to have a very low entry barrier for usage to be outstanding against competitors.
-
-[Provide relevant diagram for decision, focus on essential information for described problem. examples: Delimit your system, define boundaries and describe external interfaces with context diagram. Provide static decomposition of the product or platform in scope with building block view. Provide runtime view if required with sequence diagram]
 
 ## 1.2 Decision Drivers
 
@@ -45,27 +43,28 @@ For the overall architecture pattern decision the following quality requirements
 * Option 1: One Single Page Application with JavaScript (Vue)
 * Option 2: Python Flask application
 
-Chosen option: "Option 2 Distirbuted Components", because this architcture style allows to meet different needs regarding elasticity as well as fast development and isolated deployment. It requires highly advanced skill set in development team though.
+Chosen option: "Option 1: SPA Vue", because this architcture style allows to meet different needs regarding elasticity as well as fast development and isolated deployment. The elastic requirements of the backend or abstracted to the Vue front end via API.
+This approach requires highly advanced skill set regarding Vue in the development team though.
 
 ## 1.4 Pros and Cons of the Options <!-- optional -->
 
-[Highlight business benefits, technical impact and possible new technical debts]
+Highlight business benefits, technical impact and possible new technical debts
 
-### 1.4.1 [option 1]
+### 1.4.1 Front End provisioning with Vue based SPA
 
-[Short description of scetchd solution]
+Front end is provided in a SPA with Vue. Vue will render and update in the Browser and use API calls to the back end only to fetch data updates.
 
-* Good, because [argument a]
-* Good, because [argument b]
+* Good, because a SPA like view allows that all interaction is calculated in the browser with Java Script, hence no call back to the server for new HTML fies is required.
 * Bad, because of dependency of the development on Vue competence. Frameworks are not stable over time and require continuous effort for adaption and changes. 
-* … <!-- numbers of pros and cons can vary -->
+<!-- numbers of pros and cons can vary -->
 
-### 1.4.2 [option 2]
+### 1.4.2 Front End provisioning with Flask
 
-[Short description of scetchd solution]
+This archtecture would provide web pages with the Flask framework and depending packages to provide rendering and object mapping to DB.
 
-* Good, because [argument a]
-* Good, because [argument b]
+* Good, because it provides a fast way to provide complete web pages.
+* Python compentency exists in the company
 * Bad, because of dependency of the development on Flask competence. Frameworks are not stable over time and require continuous effort for adaption and changes. 
 * Bad, because Flask will have all business logic in one python package with relatively high internal dependency and no options for selective elasticity of different components/packages.
-* … <!-- numbers of pros and cons can vary -->
+
+<!-- numbers of pros and cons can vary -->

@@ -1,5 +1,11 @@
 # Problem Defintion
 
+This file provides an oweerview of the understanding of the described problem domain including some assumptions. The dcument provides a mission statement to define the strategic target, the identified user journeys which refect the first iteration, further improvements are expected during walk through with domain experts and market research experts.
+The System context provides an understanding of what lies within the solution and which parts are external but require integration.
+The Architecture goals provide a comprehensive overview of the quality requirements for the Warrior application. 
+Essential Constraints provides information on overall domain constraints relevant for the Warrior application.
+The Greates risks section provides overall risks which might impact the timely and/or successfull go live of the Warrior application.
+
 ## Mission Statement
 
 The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations independent of the platform or agency where it was booked.
@@ -39,7 +45,7 @@ Also the traveler can access reservation details from platforms like Sabre or Ap
 The Warrior application provides interfaces to social media channels like Instagram, Whatsapp and Facebook.
 For convenience reasons the traveler can allow the Warrior application to scan his mail folder (IMAP) in order to filter for travel relevant information and provide an additional input channel for travel updates as some agencies prefer this channel.
 
-![System Context View](/03%20SolutionDetails/ContextView.png)
+![System Context View](SystemContextView.png)
 
 The Warrior application is split into user interface components, business logic and persistency components along travel related contexts. For details please see [SolutionStartegy.md](/02%20SolutionStrategy/SolutionStrategy.md).
 
@@ -70,9 +76,11 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 ## Essential Constraints
 
-The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP.
+The company is a start up with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. 
+Being a start up with limited funding, the target is to have an MVP available with short time to market.
+We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP. An early market penetration and attract further funds, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
 
 ## Greatest Risks
 
 * Availability, data currentness, correctness: Users are not able to use the Road Warrior App during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason)
-* Security: Especially ensure data privacy concerns for all the processed and stored data.  
+* Security: Especially ensure data privacy concerns for all the processed and stored data. This topic is addressed in an additional [CrossCuttingConcern for security](/03%20SolutionDetails/CrossCuttingConcern_Security.md).
