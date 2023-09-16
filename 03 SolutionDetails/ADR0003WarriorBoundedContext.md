@@ -9,7 +9,7 @@
 
 The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations.
 
-![Context View of RoadWarrior](ContextView.png)
+![Context View of RoadWarrior](/01%20ProblemDefintion/SystemContextView.png)
 
 The decision which is described in this ADR: **What are the best service boundaries** within the Road Warrior application to support the requirements especially the quality requirements and architecture principles?
 
@@ -45,7 +45,7 @@ From the overall architecture pattern decision the following quality requirement
 
 * Option 1: Decouple services along data flow (Inbound, Outbound, Frontend, etc.) 
 * Option 2: Decouple services along domains only
-* Option 3: Decouple services along domains with some cross domain services for reusability
+* **Option 3: Decouple services along domains with some cross domain services for reusability**
 
 **Chosen option: "Option 3 along domains with cross domain services"**, because this clustering enables on the one side to have isolated teams working on their domain and to meet different architectural characteristics per service but on the other side avoids too much duplication with usage of cross domain services. It requires highly advanced skill set in development team though.
 
@@ -54,12 +54,11 @@ From the overall architecture pattern decision the following quality requirement
 
 ### 1.4.1 Create modules along data flow (Inbound, Outbound, Frontend, etc.)
 
-Follow the data flow through the app and divide in logical modules focusing on the the technical solution behind. In Frontend team front end technologies are needed, in Inbound and outbound mor integration technologies are needed and in core the business logic and calculation engine is created.
+Follow the data flow through the app and divide in logical modules focusing on the the technical solution behind. In Frontend team front end technologies are needed, in Inbound and outbound more integration technologies are needed and in core the business logic and calculation engine is created.
 ![modules_along_dataflow](DataFlowModules.png)
 * Good: Easy to understand
 * Good: Little to no duplication in functionalities
 * Bad: Tight coupling between services allow no flexibility in terms of architecture characteristics. All systems have to deliver highest requirements in terms of availability and elasticity. Changes are difficult as many parts need to be touched to change one workflow affecting other workflows as well.
-* … <!-- numbers of pros and cons can vary -->
 
 ### 1.4.2 Create services along domains only
 
@@ -71,7 +70,6 @@ Following the idea of Domain Driven Design in this option we split the services 
 * Bad, because some functionalities as user interface, data collection for analytics and interfaces to source system are duplicated and have to be maintained seperatly. This will lead to inconsistencies in the individual solutions.
 * Bad, because of different technologies have to be included in one mudule, so also the required skills are not isolated. 
 * Bad, because from technical perspective more capababilities have to be provided in each of the module teams.
-* … <!-- numbers of pros and cons can vary -->
 
 ### 1.4.3 Create modules along domains with some cross domain modules for reusability
 
@@ -83,4 +81,3 @@ Split focused on the user interaction with the system, the big user journeys and
 * Good, Reusability is enabled with some cross domain moodules for data capture and user interface
 * Bad, because of different technologies have to be included in one mudule, so also the required skills are not isolated. 
 * Bad, because from technical perspective more capababilities have to be provided in each of the module teams.
-* … <!-- numbers of pros and cons can vary -->

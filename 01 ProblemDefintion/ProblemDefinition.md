@@ -8,7 +8,7 @@ The [Largest risks](#largest-risks) section provides overall risks which might i
 
 ## Mission Statement
 
-The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations independent of the platform or agency where it was booked.
+The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations independent of the platform or agency where it was booked. The benefit of the solution for the traveler is to have a one stop shop with all reservation details in one place with guarateed currentness. This is a major improvement compared to the current market standard, where travelers have to deal with multiple portals and agency pages with inconsistent data or formatting.
 
 ## User Journeys
 
@@ -16,13 +16,13 @@ The main interaction of the traveler (user) for the MVP is scetched with the fol
 
 ### Planning Journey
 
-The target of the planning journey is to plan and prepare an upcomming trip (travel).
+The target of the planning journey is to plan and prepare an upcomming trip (travel). Here the ep+mphasis is on easily building a trip consisting of different reservations for cars, flights or hotels. This preparation step helps the traveler to check completeness and consistency of all the reservations and allows him to focus on the fun part during the travel later.
 
 ![Panning Journey](PlanningJourney.png)
 
 ### Travel Journey
 
-The target of the travel journey is to support the traveler while on the journey and provide him with always up to date information on the current and upcomming reservations. He also should be able to trigger or digest changes in schedule, accomodation or connection details.
+The target of the travel journey is to support the traveler while on the journey and provide him with always up to date information on the current and upcomming reservations. He also should be able to trigger or digest changes in schedule, accomodation or connection details. The journey is designed to optimize the travel experience of the user. He has optimum overview over the upcomming reservations and he gets consistent and timely updates on all reservations if needed. This way the traveler can focus on the most important thing, which is enjoying the trip.
 
 The user wants to share his trip with friends and family via social media channels.
 
@@ -53,7 +53,7 @@ The Road Warrior application is split into user interface components, business l
 
 Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
-The following list of quality requirements is based on ISO25010. It is reduced to the more relevant characteristics and enhanced where needed. Subsets of this list are used within the ADRs to provide constraints and priorities for architecture decisions.
+The following list of quality requirements is based on ISO25010. It is reduced to the more relevant characteristics and enhanced where needed. Subsets of this long list are used within the ADRs to provide constraints and priorities for architecture decisions.
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
@@ -82,5 +82,6 @@ We also require a short time to market in order to enable the business model qui
 
 ## Largest Risks
 
-* Availability, data currentness, correctness: Users are not able to use the Road Warrior app during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason)
+* Availability, data currentness, correctness: Users are not able to use the Road Warrior app during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason). 
+* There is a connected risk, because the success of the Warrior application depends on the timely and acurate delivery of reservation updates by the agencies. If the agencies fail to deliver updates in time or inconsistent the user will atribute this to Warrior application.
 * Security: Especially ensure data privacy concerns for all the processed and stored data. This topic is addressed in an additional [CrossCuttingConcern for security](/03%20SolutionDetails/CrossCuttingConcern_Security.md).

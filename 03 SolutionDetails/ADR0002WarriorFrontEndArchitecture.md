@@ -3,7 +3,7 @@
 
 * Status: accepted <!-- mandatory -->
 * Deciders: Jan, Philip, Oliver <!-- mandatory -->
-* Date: 09-14-2023 <!-- mandatory -->
+* Date: 09-15-2023 <!-- mandatory -->
 
 ## 1.1 Context and Problem Statement
 
@@ -40,7 +40,7 @@ For the overall architecture pattern decision the following quality requirements
 
 [Provide summary of considered options as one liners and provide reasoning for  selected option, based on above Problem Statement, Architecture principles and considered Quality Requirements.]
 
-* Option 1: One Single Page Application with JavaScript (Vue)
+* **Option 1: One Single Page Application with JavaScript (Vue)**
 * Option 2: Python Flask application
 
 Chosen option: "Option 1: SPA Vue", because this architcture style allows to meet different needs regarding elasticity as well as fast development and isolated deployment. The elastic requirements of the backend or abstracted to the Vue front end via API.
@@ -66,5 +66,3 @@ This archtecture would provide web pages with the Flask framework and depending 
 * Python compentency exists in the company
 * Bad, because of dependency of the development on Flask competence. Frameworks are not stable over time and require continuous effort for adaption and changes. 
 * Bad, because Flask will have all business logic in one python package with relatively high internal dependency and no options for selective elasticity of different components/packages.
-
-<!-- numbers of pros and cons can vary -->
