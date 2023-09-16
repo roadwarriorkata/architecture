@@ -13,7 +13,6 @@ The target is to build an online trip management application to allow travelers 
 
 The decision which is described in this ADR: **What are the best service boundaries** within the Road Warrior application to support the requirements especially the quality requirements and architecture principles?
 
-
 ## 1.2 Decision Drivers
 
 It needs to be clarified, how the overall architecture pattern looks like. What are the guidelines for composition and communication.
@@ -22,7 +21,7 @@ It needs to be clarified, how the overall architecture pattern looks like. What 
 From all architecture principles the following ones are most relevent for this decision:
 * Design for simplicity, we strive for simple architectures, which are easier to communicate, build, deploy, operate, and evolve.
 * Design for modular landscape, we balance loose coulpling and coherence.
-* Design for external integration, we allow to connect to a growing eco system.
+* Design for external integration, we allow to connect to a growing ecosystem.
 
 
 ### 1.2.2 Quality Requirements
@@ -35,16 +34,14 @@ From the overall architecture pattern decision the following quality requirement
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
-| Elasticity | high | Parts of the Road Warrior application has to adapt to current needs e.g. start of local vacation times like christmas or thanks giving. Also in case of issues in e.g. air traffic will lead to much more travel updates. |
+| Elasticity | high | Parts of the Road Warrior application have to adapt to current needs e.g. start of local vacation times like Christmas or Thanksgiving. Also in case of issues in e.g. air traffic will lead to many more travel updates. |
 | Availability | high | max 5 min downtime per month|
 | Data Consistency | medium | no extra needs or complex data model |
-| Data Currentness | high | during travel the traveler expects absolute consistency of reservation data against the source system. |
-| Testability | high | Testability is critical as the Road Warrior application needs to be adapted and enhanced easily and frequently. This requires safeguarding with automated testing, hence system design needs to support testablity.|
+| Data Currentness | high | during travel the traveler expects absolute consistency of reservation data against the source systems. |
+| Testability | high | Testability is critical as the Road Warrior application needs to be adapted and enhanced easily and frequently to incorporate user feedback and new functionality timely. This requires safeguarding with automated testing, hence system design needs to support testablity. |
 | Adaptability | high | High requirements to allow for application adaptation according to emerging business needs and changes in market expectations.|
 
-
 ## 1.3 Considered Options and Decision Outcome
-
 
 * Option 1: Decouple services along data flow (Inbound, Outbound, Frontend, etc.) 
 * Option 2: Decouple services along domains only
@@ -58,10 +55,10 @@ From the overall architecture pattern decision the following quality requirement
 ### 1.4.1 Create modules along data flow (Inbound, Outbound, Frontend, etc.)
 
 Follow the data flow through the app and divide in logical modules focusing on the the technical solution behind. In Frontend team front end technologies are needed, in Inbound and outbound mor integration technologies are needed and in core the business logic and calculation engine is created.
-![modules_along_dataflow](modules_along_dataflow.png)
-* Good, Easy to understand
-* Good, Less duplication in functionalities
-* Bad, because of not able to reflect the different architecture characteristics for different user journeys in the application. Everything is highly coupled from a domain perspective, for a change probably all modules have to be toughed.
+![modules_along_dataflow](DataFlowModules.png)
+* Good: Easy to understand
+* Good: Little to no duplication in functionalities
+* Bad: Tight coupling between services allow no flexibility in terms of architecture characteristics. All systems have to deliver highest requirements in terms of availability and elasticity. Changes are difficult as many parts need to be touched to change one workflow affecting other workflows as well.
 * … <!-- numbers of pros and cons can vary -->
 
 ### 1.4.2 Create services along domains only
