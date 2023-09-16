@@ -9,7 +9,7 @@
 
 The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations.
 
-![Context View of RoadWarrior](ContextView.png)
+![Context View of RoadWarrior](/01%20ProblemDefintion/SystemContextView.png)
 
 User Access to the Road Warrior will be via Web Browser, iOS or Android app.
 

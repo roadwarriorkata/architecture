@@ -26,7 +26,7 @@ The documentation is organized into three folders providing detailed information
 
 ### Solution Details
 
-- Architecture Decisions
+- [Architecture Decisions](/03%20SolutionDetails/ArchitectureDecisions.md)
 - Structure
 - Behaviour
 - Deployment
