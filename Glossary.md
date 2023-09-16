@@ -9,3 +9,4 @@
 | API | Application programming interface. Here a HTTP based RESTfull API is meant |
 | Warrior | used as synonym for Travel Warrior application |
 | OWASP | [OWASP About](https://owasp.org/about/) |
+| OLAP | [Online analytical processing](https://en.wikipedia.org/wiki/Online_analytical_processing) |

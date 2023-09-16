@@ -27,10 +27,7 @@ The documentation is organized into three folders providing detailed information
 ### Solution Details
 
 - [Architecture Decisions](/03%20SolutionDetails/ArchitectureDecisions.md)
-- Structure
-- Behaviour
-- Deployment
-- Cross Cutting
+- [Cross Cutting](/03%20SolutionDetails/CrossCuttingConcern_Security.md)
 
 ---
 
