@@ -9,7 +9,7 @@
 
 The target is to build an online trip management application to allow travelers to manage their trips and see all of their existing reservations.
 
-![Context View of RoadWarrior](ContextView.png)
+![Context View of RoadWarrior](/01%20ProblemDefintion/SystemContextView.png)
 
 The decision which is described in this ADR: **What are the best service boundaries** within the Road Warrior application to support the requirements especially the quality requirements and architecture principles?
 
@@ -59,7 +59,7 @@ Follow the data flow through the app and divide in logical modules focusing on t
 * Good: Easy to understand
 * Good: Little to no duplication in functionalities
 * Bad: Tight coupling between services allow no flexibility in terms of architecture characteristics. All systems have to deliver highest requirements in terms of availability and elasticity. Changes are difficult as many parts need to be touched to change one workflow affecting other workflows as well.
-* … <!-- numbers of pros and cons can vary -->
+
 
 ### 1.4.2 Create services along domains only
 
@@ -71,7 +71,7 @@ Following the idea of Domain Driven Design in this option we split the services 
 * Bad, because some functionalities as user interface, data collection for analytics and interfaces to source system are duplicated and have to be maintained seperatly. This will lead to inconsistencies in the individual solutions.
 * Bad, because of different technologies have to be included in one mudule, so also the required skills are not isolated. 
 * Bad, because from technical perspective more capababilities have to be provided in each of the module teams.
-* … <!-- numbers of pros and cons can vary -->
+
 
 ### 1.4.3 Create modules along domains with some cross domain modules for reusability
 
@@ -83,4 +83,4 @@ Split focused on the user interaction with the system, the big user journeys and
 * Good, Reusability is enabled with some cross domain moodules for data capture and user interface
 * Bad, because of different technologies have to be included in one mudule, so also the required skills are not isolated. 
 * Bad, because from technical perspective more capababilities have to be provided in each of the module teams.
-* … <!-- numbers of pros and cons can vary -->
+
