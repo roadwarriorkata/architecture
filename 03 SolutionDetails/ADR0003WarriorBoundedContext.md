@@ -60,7 +60,7 @@ Follow the data flow through the app and divide in logical modules focusing on t
 * Good: Little to no duplication in functionalities
 * Bad: Tight coupling between services allow no flexibility in terms of architecture characteristics. All systems have to deliver highest requirements in terms of availability and elasticity. Changes are difficult as many parts need to be touched to change one workflow affecting other workflows as well.
 
-### 1.4.2 Create services along domains onlyg
+### 1.4.2 Create services along domains only
 
 Following the concept of Domain Driven Design in this option we split the services completly along the identified domains, which are defined by the [user journeys](/01%20ProblemDefintion/ProblemDefinition.md#user-journeys). In contrast to option 3, the user front end and the interfaces to data sources are duplicated and part of each service.
 ![Service_bounderies_domain](Service_bounderies_domain.png)
