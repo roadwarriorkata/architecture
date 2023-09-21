@@ -16,7 +16,7 @@ The main interaction of the traveler (user) for the MVP is scetched with the fol
 
 ### Planning Journey
 
-The target of the planning journey is to plan and prepare an upcomming trip (travel). Here the ep+mphasis is on easily building a trip consisting of different reservations for cars, flights or hotels. This preparation step helps the traveler to check completeness and consistency of all the reservations and allows him to focus on the fun part during the travel later.
+The target of the planning journey is to plan and prepare an upcomming trip (travel). Here the emphasis is on easily building a trip consisting of different reservations for cars, flights or hotels. This preparation step helps the traveler to check completeness and consistency of all the reservations and allows him to focus on the fun part during the travel later.
 
 ![Panning Journey](PlanningJourney.png)
 
@@ -51,7 +51,7 @@ The Road Warrior application is split into user interface components, business l
 
 ## Architecture Goals
 
-Quality Requirements: [ISO2510](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
+Quality Requirements: [ISO25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
 The following list of quality requirements is based on ISO25010. It is reduced to the more relevant characteristics and enhanced where needed. Subsets of this long list are used within the ADRs to provide constraints and priorities for architecture decisions.
 
@@ -78,10 +78,10 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 The company is a startup with limited experience and capacity in developing and deploying modern architecture. The team has no experience in developing microservice architectures. 
 Being a startup with limited funding, the target is to have an MVP available with short time to market.
-We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP. An early market penetration and attract further funds, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
+We also require a short time to market in order to enable the business model quickly while limiting the cost of the MVP. An early market penetration is crucial to be able to attract further funding, also with early users we will have a great learning curve and can adapt the early application according to the learnings.
 
 ## Largest Risks
 
-* Availability, data currentness, correctness: Users are not able to use the Road Warrior app during the travel or app shows wrong data. If there are changes in trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason). 
+* Availability, data currentness, correctness: Users are not able to use the Road Warrior app during the travel or app shows wrong data. If there are changes in a trip communicated on short notice, but user is not informed about the app, user propably will not trust the app anymore in future. Furthermore user will not trust the app if the shown trip schedule is wrong (independent of the reason). 
 * There is a connected risk, because the success of the Warrior application depends on the timely and acurate delivery of reservation updates by the agencies. If the agencies fail to deliver updates in time or inconsistent the user will atribute this to Warrior application.
 * Security: Especially ensure data privacy concerns for all the processed and stored data. This topic is addressed in an additional [CrossCuttingConcern for security](/03%20SolutionDetails/CrossCuttingConcern_Security.md).
