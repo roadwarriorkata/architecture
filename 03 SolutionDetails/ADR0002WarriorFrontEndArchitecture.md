@@ -28,7 +28,7 @@ For the overall architecture pattern decision the following quality requirements
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
-| Time Behaviour, Responsiveness | high | response time web: 800ms app: 1400ms|
+| Time Behaviour, Responsiveness | very high | response time web: 800ms app: 1400ms|
 | Capacity, Scalability | high | 2mio active users per week |
 | Learnability | high | Travelers will not use this on a daily base, hence the application needs to be very easy to understand |
 | Accessability | high | All travlers across the world are targeted with this application, time zones, languages and currencies need to be taken into account. MVP: North America and Europe with English, French, German, Italien, Spanish language. All timezones, Two currencies US dollar and Euro |

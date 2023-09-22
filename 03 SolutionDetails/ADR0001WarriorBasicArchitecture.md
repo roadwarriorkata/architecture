@@ -34,11 +34,11 @@ For the overall architecture pattern decision the following quality requirements
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
-| Time Behaviour, Responsiveness | high | Response time web: 800ms app: 1400ms|
+| Time Behaviour, Responsiveness | very high | Response time web: 800ms app: 1400ms|
 | Capacity, Scalability | high | 2 mio active users per week |
 | Elasticity | high | Parts of the Road Warrior application has to adapt to current needs e.g. start of local vacation times like christmas or thanks giving. Also in case of issues in e.g. air traffic will lead to much more travel updates. |
-| Availability | high | max 5 min downtime per month|
-| Data Currentness | high | during travel the traveler expects absolute consistency of reservation data against the source system. |
+| Availability | very high | max 5 min downtime per month|
+| Data Currentness | very high | during travel the traveler expects absolute consistency of reservation data against the source system. |
 | Testability | high | Testability is critical as the Road Warrior application needs to be adapted and enhanced easily and frequently. This requires safeguarding with automated testing, hence system design needs to support testablity.|
 | Adaptability | high | High requirements to allow for application adaptation according to emerging business needs and changes in market expectations.|
 

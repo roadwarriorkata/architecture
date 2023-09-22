@@ -31,7 +31,7 @@ The user wants to share his trip with friends and family via social media channe
 ### Help Journey
 
 In case the traveler runs into conflicting information or problems when traveling, each of the agencies provides contact details, which are displyed by the app for easy access and fast issue resolution.
-
+![Alt text](image.png)
 ![Help Journey](HelpJourney.png)
 
 ### Analytics / Reporting Journey
@@ -57,14 +57,14 @@ The following list of quality requirements is based on ISO25010. It is reduced t
 
 | Quality Requirement | Relevance | Description for Road Warrior |
 | --- | --- | --- |
-| Time Behaviour, Responsiveness | high | Max Response time web: 800ms app: 1400ms|
+| Time Behaviour, Responsiveness | very high | Max Response time web: 800ms app: 1400ms|
 | Capacity, Scalability | high | 2 mio active users per week, 15 mio users overall |
 | Elasticity | high | Parts of the Road Warrior application has to adapt to current needs e.g. start of local vacation times like Christmas or Thanksgiving. Also in case of issues in e.g. air traffic will lead to many more travel updates. |
 | Learnability | high | Travelers will not use this on a daily base, hence the application needs to be very easy to understand |
 | Accessability | high | All travelers across the world are targeted with this application, therefore different time zones, languages and currencies need to be taken into account. MVP: North America and Europe with English, French, German, Italien, Spanish language. All timezones, two currencies: US dollar and Euro |
-| Availability | high | max 5 min downtime per month|
+| Availability | very high | max 5 min downtime per month|
 | Data Consistency | medium | no extra needs or complex data model |
-| Data Currentness | high | during travel the traveler expects absolute consistency of reservation data against the source system. |
+| Data Currentness | very high | during travel the traveler expects absolute consistency of reservation data against the source system. |
 | Recoverability | high | The user needs to be able to revcover his data, if the mobile app crashes or the web browser stops. |
 | Confidentiality | medium | Data privacy requirements need to be taken into account, namely GDPR in Europe. API calls need to be secured accordingly.|
 | Integrity | low | There is no reservation data generated in Road Warrior. All data is comming from agencies or travel platforms as system of record. Hence no critical integrity requirements need to be considered with Road Warrior.|
