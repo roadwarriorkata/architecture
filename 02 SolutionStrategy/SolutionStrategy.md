@@ -39,7 +39,7 @@ We design for maintainability of technologies, applications and data. This princ
 ### Principle: Design for security and compliance
 We ensure legal constraints and ensure external regulations by design. As GDPR is an important an relevant regulation in EU, security by design is imporant. Most security decisions must ba taken early in the product development process, Later mitigation/correction is very costly (if possible at all).
 
-## Context View Diagram
+## Component Overview Diagram
 
 The following diagram provides insights into the overall context and respective services and components for the Warrior application. It is possible to optimize each serivce according to the architectual characteristics. Due to the specific elasticity requirements for the Travel Service it was decided to use a microservice architecture to reflect this.
 

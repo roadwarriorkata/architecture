@@ -21,7 +21,8 @@ The documentation is organized into three folders providing detailed information
 
 - [Solution Strategy](/02%20SolutionStrategy/SolutionStrategy.md#solution-strategy) (containing architecture goals and their supportive architecture approaches)
 - [Architecture Principles](/02%20SolutionStrategy/SolutionStrategy.md#architecture-principles)
-- [Informal Overview Diagram](/02%20SolutionStrategy/SolutionStrategy.md#informal-overview-diagram)
+- [Component Overview Diagram](/02%20SolutionStrategy/SolutionStrategy.md#component-overview-diagram)
+- [Integration View](/02%20SolutionStrategy/SolutionStrategy.md#integration-view)
 - [Trade Offs](/02%20SolutionStrategy/SolutionStrategy.md#trade-offs) (conflicting architecture characteristics or known constraints)
 
 ### Solution Details
