@@ -39,11 +39,16 @@ We design for maintainability of technologies, applications and data. This princ
 ### Principle: Design for security and compliance
 We ensure legal constraints and ensure external regulations by design. As GDPR is an important an relevant regulation in EU, security by design is imporant. Most security decisions must ba taken early in the product development process, Later mitigation/correction is very costly (if possible at all).
 
-## Informal Overview Diagram
+## Context View Diagram
 
-The following diagram provides insights into the overall contexts and respective services and components for the Warrior application. It provides a scetch of the communication and interaction patterns required for cross context communication and external communication with agencies.
+The following diagram provides insights into the overall context and respective services and components for the Warrior application. It is possible to optimize each serivce according to the architectual characteristics. Due to the specific elasticity requirements for the Travel Service it was decided to use a microservice architecture to reflect this.
 
 ![High Level De-Composition](HighLevelComponentView.png)
+
+## Integration View
+It provides a scetch of the communication and interaction patterns required for cross service communication and external communication. The User Front Ends interact via RESTful APIs with the service layer. the different services are decoupled via asynchronous message queues with domain events to avoid blocking and enable independent scaling of travel service. External systems are connected via APIs (agencies, social media) or IMAP for mail. 
+![High Level De-Composition](HighLevelComponentView-Interaction.png)
+
 
 ## Trade Offs 
 

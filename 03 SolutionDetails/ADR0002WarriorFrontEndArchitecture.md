@@ -38,7 +38,6 @@ For the overall architecture pattern decision the following quality requirements
 
 ## 1.3 Considered Options and Decision Outcome
 
-[Provide summary of considered options as one liners and provide reasoning for  selected option, based on above Problem Statement, Architecture principles and considered Quality Requirements.]
 
 * **Option 1: One Single Page Application with JavaScript (Vue)**
 * Option 2: Python Flask application

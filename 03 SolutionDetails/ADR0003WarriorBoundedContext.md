@@ -41,6 +41,9 @@ From the overall architecture pattern decision the following quality requirement
 | Testability | high | Testability is critical as the Road Warrior application needs to be adapted and enhanced easily and frequently to incorporate user feedback and new functionality timely. This requires safeguarding with automated testing, hence system design needs to support testablity. |
 | Adaptability | high | High requirements to allow for application adaptation according to emerging business needs and changes in market expectations.|
 
+The quality requirements or architectual charateristics are not equally important for the whole application. If possible it should be considered to meet the requirements as shown based on the user journeys below: 
+![specific_ArchitectureRequirements](specific_ArchitectureRequirements.png)
+
 ## 1.3 Considered Options and Decision Outcome
 
 * Option 1: Decouple services along data flow (Inbound, Outbound, Frontend, etc.) 
